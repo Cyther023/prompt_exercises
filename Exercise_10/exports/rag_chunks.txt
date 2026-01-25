@@ -1,0 +1,601 @@
+CHUNK 1 | source=.uploads/sample.pdf | page=0
+Driver Drowsiness Detection System and 
+Techniques: A Review 
+             
+Vandna Saini 
+                Research Scholar, CSE Department 
+                Chandigarh University Gharuan, Punjab, India. 
+    
+          Rekha Saini 
+              Assistant Professor, CSE Department 
+              Chandigarh University Gharuan, Punjab, India. 
+ 
+ 
+Abstract— Drivers who do not take regular breaks when 
+driving long distances run a high risk of becoming  drowsy a 
+state which they often fail to recognize early enough according 
+to the experts. Studies show that around one quarter of all 
+serious motorway accidents are at tributable to sleepy drivers 
+in need of a rest, meaning th at drowsiness causes more road 
+accidents than drink-driving. Attention assist can warn of 
+inattentiveness and drowsiness in an extended speed range and
+
+--------------------------------------------------------------------------------
+
+CHUNK 2 | source=.uploads/sample.pdf | page=0
+accidents than drink-driving. Attention assist can warn of 
+inattentiveness and drowsiness in an extended speed range and 
+notify drivers of their current state of fatigue and the driving 
+time since the last break, offers adjustable sensitivity and, if a 
+warning is emitted, indicates nearby service areas in the 
+COMAND navigation system. 
+ 
+Keywords—Drowsiness Detection, Eyes Detection, Blink Pattern, 
+Face Detection, LBP, SWM. 
+I. INTRODUCTION 
+    Driver drowsiness detecti on is a car safety technology 
+which prevents accidents when the driver is getting drowsy.   
+Various studies have suggested that around 20% of all road 
+accidents are fatigue-related, up to 50% on certain roads. 
+Driver fatigue is a significant factor in a large number of 
+vehicle accidents. Recent statistics estimate that annually 
+1,200 deaths and 76,000 injuries can be attributed to fatigue
+
+--------------------------------------------------------------------------------
+
+CHUNK 3 | source=.uploads/sample.pdf | page=0
+vehicle accidents. Recent statistics estimate that annually 
+1,200 deaths and 76,000 injuries can be attributed to fatigue 
+related crashes. The development of technologies for 
+detecting or preventing drowsiness at the wheel is a major 
+challenge in the field of accident avoidance systems. 
+Because of the hazard that drow siness presents on the road, 
+methods need to be developed for counteracting its affects. 
+Driver inattention might be the result of a lack of alertness 
+when driving due to driver drowsiness and distraction. 
+Driver distraction occurs when  an object or event draws a 
+person’s attention away from the driving task. Unlike driver 
+distraction, driver drowsiness involves no triggering event 
+but, instead, is characterized by a progressive withdrawal of 
+attention from the road and traffic demands. Both driver 
+drowsiness and distraction, however, might have the same
+
+--------------------------------------------------------------------------------
+
+CHUNK 4 | source=.uploads/sample.pdf | page=0
+attention from the road and traffic demands. Both driver 
+drowsiness and distraction, however, might have the same 
+effects, i.e., decreased drivin g performance, longer reaction 
+time, and an increased risk of crash involvement. [1]. 
+“Fig.1”, shows the block diagram of overall system. Based 
+on Acquisition of  video from the camera that is in front of 
+driver perform real-time processing of an incoming video 
+stream in order to infer the driver’s level of fatigue if the 
+drowsiness is Estimated then the output is send to the alarm 
+system and alarm is activated  
+ 
+ 
+ Fig.1.Block Diagram of overall System [2] 
+ 
+II. FACTORS CAUSING DRIVING DROWSINESS 
+Driver Fatigue is often caused by  four main factors: sleep, 
+work, time of day, and physical. Often people try to do 
+much in a day and they lose precious sleep due to this. 
+Often by taking caffeine or other stimulants people continue
+
+--------------------------------------------------------------------------------
+
+CHUNK 5 | source=.uploads/sample.pdf | page=0
+much in a day and they lose precious sleep due to this. 
+Often by taking caffeine or other stimulants people continue 
+to stay awake. The lack of sleep builds up over a number of 
+days and the next thing that happens is the body finally 
+collapses and The person falls asleep. Time of day factors 
+can often affect the body. The human brain is trained to 
+think there are times the body should be asleep. These are 
+often associated with seeing the sunrise and sunset. 
+Between the hours of 2 AM and 6 AM, the brain tells the 
+body it should be asleep.  
+Extending the time awake will eventually lead to the body 
+crashing. The final factor is a person’s physical condition. 
+People sometimes are on medications that create 
+drowsiness or have physical ailments that cause these issues. 
+Being physically unfit, by being either under or overweight,
+
+--------------------------------------------------------------------------------
+
+CHUNK 6 | source=.uploads/sample.pdf | page=0
+drowsiness or have physical ailments that cause these issues. 
+Being physically unfit, by being either under or overweight, 
+will cause fatigue. Additionally, being emotionally stressed 
+will cause the body to get fatigued quicker [3] 
+III. RELATED STUDY 
+Drowsiness detection can be divided into three main 
+categories (1) Vehicle based (2) Behavioural based (3) 
+Physiological based. [4]”Fig.2”, shows the three different 
+approaches for drowsiness detection. Drowsiness detection 
+is based on these three parameters. A detailed review on 
+these measures will provide insight on the present systems, 
+issues associated with them and the enhancements that need 
+to be done to make a robust system.  
+Vehicle based measures:  A number of metrics, including 
+deviations from lane position, movement of the steering 
+wheel, pressure on the accel eration pedal, etc., are
+
+--------------------------------------------------------------------------------
+
+CHUNK 7 | source=.uploads/sample.pdf | page=0
+deviations from lane position, movement of the steering 
+wheel, pressure on the accel eration pedal, etc., are 
+Vandna Saini et al, / (IJCSIT) International Journal of Computer Science and Information Technologies, Vol. 5 (3) , 2014, 4245-4249
+www.ijcsit.com 4245
+
+--------------------------------------------------------------------------------
+
+CHUNK 8 | source=.uploads/sample.pdf | page=1
+constantly  monitored  and any change in these that crosses 
+a specified threshold indicate s a significantly increased 
+probability that the driver is drowsy. 
+ 
+Fig.2. Different Approaches for Drowsiness Detection and Warnings [4] 
+ 
+Behavioural based measures:  The behaviour of the driver, 
+including yawning, eye closure, eye blinking, head pose,   
+etc.  
+is monitored through a camera an d the driver is alerted if 
+any of these drowsiness symptoms are detected. 
+Physiological based measures: The correlation between 
+physiological signals ECG (Electrocardiogram) and EOG 
+(Electrooculogram).  Drowsiness is detected through pulse 
+rate, heart beat and brain information. 
+IV. DISCOVERY 
+    Several authors have proposed different approaches for   
+Drowsiness detection system, most of them using ECG, 
+Vehicle Based approaches.A robust real- time embedded
+
+--------------------------------------------------------------------------------
+
+CHUNK 9 | source=.uploads/sample.pdf | page=1
+Drowsiness detection system, most of them using ECG, 
+Vehicle Based approaches.A robust real- time embedded 
+platform to monitor the loss of attention of the driver during 
+day and night driving conditions. [5] A drowsiness 
+detection system using both brain and visual activity is 
+presented in this paper. The brain activity is monitored 
+using a single electroencephalographic (EEG) channel.[6] A 
+method to monitor driver safety by analyzing information 
+related to fatigue using two distinct methods: eye 
+movement monitoring and bio-signal processing. A 
+monitoring system is designed in Android-based 
+Smartphone. [7] A support vector machine (SVM) classifies 
+a sequence of video segments into alert or non alert driving 
+events. Experimental results show that the proposed scheme 
+offers high classiﬁcation accuracy [8]. The aim of this paper
+
+--------------------------------------------------------------------------------
+
+CHUNK 10 | source=.uploads/sample.pdf | page=1
+events. Experimental results show that the proposed scheme 
+offers high classiﬁcation accuracy [8]. The aim of this paper 
+is to maximize the amount of drowsiness-related 
+information extracted from a set of electroencephalogram 
+(EEG), electrooculogram    (EOG),   and     
+electrocardiogram   (ECG) 
+Signals during a simulation driving test.[9]  The system is a 
+software prototype of this system in vehicles, where images 
+that are captured will be processed using image processing 
+techniques and accordingly issue warning.[10] A robust eye 
+detection algorithm is introduced to address the problems 
+caused by changes in illumination and driver posture. Six 
+measures are calculated with pe rcentage of eyelid closure, 
+maximum closure duration, an d blink frequency, average 
+opening level of the eyes, opening velocity of the eyes, and 
+closing velocity of the eyes.[11]
+
+--------------------------------------------------------------------------------
+
+CHUNK 11 | source=.uploads/sample.pdf | page=1
+opening level of the eyes, opening velocity of the eyes, and 
+closing velocity of the eyes.[11] 
+V. DROWSINESS DETECTION TECHNIQUES 
+    If car technologies are go ing to prevent or at least warn 
+of driver fatigue, what symptoms does the driver give off 
+that can be detected?  According to research, there are 
+multiple categories of technologies that can detect driver 
+fatigue. The first is the use of cameras to monitor a person’s 
+behaviour. This includes monitoring their pupils, mouth for 
+yawning, head position, and a variety of other factors. The 
+next of these technologies is voice recognition. Often a 
+person’s voice can give off clues on how fatigued they are.  
+The detail explanation of the underlying techniques of 
+drowsiness detection that are mostly used for the detection 
+purpose: 
+• ECG and EEG 
+• LBP (Local Binary Pattern) 
+• Steering Wheel Movement (SWM)
+
+--------------------------------------------------------------------------------
+
+CHUNK 12 | source=.uploads/sample.pdf | page=1
+drowsiness detection that are mostly used for the detection 
+purpose: 
+• ECG and EEG 
+• LBP (Local Binary Pattern) 
+• Steering Wheel Movement (SWM) 
+• Optical Detection 
+ 
+A. ECG and EEG 
+   Many researchers have considered the following 
+physiological signals to detect drowsiness: 
+electrocardiogram (ECG), el ectroencephalogram (EEG). 
+The heart rate (HR) also varies significantly between the 
+different stages of drowsiness, such as alertness and fatigue. 
+Therefore, heart rate, which can be easily determined by the 
+ECG signal, can also be used to detect drowsiness. Others 
+have measured drowsiness using Heart Rate Variability 
+(HRV), in which the low (LF) and high (HF) frequencies 
+fall in the range of 0.04–0.15 Hz and 0.14–0.4 [12]” Fig.3”, 
+shows physiological signal  sensing system that can be 
+integrated into vehicles to detect driver drowsiness.
+
+--------------------------------------------------------------------------------
+
+CHUNK 13 | source=.uploads/sample.pdf | page=1
+shows physiological signal  sensing system that can be 
+integrated into vehicles to detect driver drowsiness. 
+Fig.3. Schematic of Sensing System Integration for Driver Drowsiness 
+Detection and Assistance [13] 
+ 
+The Electroencephalogram (EEG) is the physiological 
+signal most commonly used to measure drowsiness. The 
+EEG signal has various frequency bands, including the 
+delta band (0.5–4 Hz), which corresponds to sleep activity, 
+the theta band (4–8 Hz), which is related to drowsiness, the 
+alpha band (8–13 Hz), which represents relaxation and 
+creativity, and the beta band (13–25 Hz), which 
+corresponds to aler tness . A decrease in  the power changes 
+in the alpha frequency band an d an increase in the theta 
+frequency band indicates drowsiness. 
+Vandna Saini et al, / (IJCSIT) International Journal of Computer Science and Information Technologies, Vol. 5 (3) , 2014, 4245-4249
+
+--------------------------------------------------------------------------------
+
+CHUNK 14 | source=.uploads/sample.pdf | page=1
+Vandna Saini et al, / (IJCSIT) International Journal of Computer Science and Information Technologies, Vol. 5 (3) , 2014, 4245-4249
+www.ijcsit.com 4246
+
+--------------------------------------------------------------------------------
+
+CHUNK 15 | source=.uploads/sample.pdf | page=2
+B.  LBP (local binary pattern) 
+  Local binary patterns (LBPs) have aroused increasing 
+interest in image processing and computer vision. As a 
+nonparametric method, LBP summarizes local structures of 
+images efficiently by comparing each pixel with its 
+neighbouring pixels. The most important properties of LBP 
+are its tolerance regarding monotonic illumination changes 
+and its computational simplicity. This technique is mostly 
+used for detecting emotions on the face like, happiness, 
+sadness, excitement etc. LBP (local binary pattern) is used 
+in drowsiness detection for detecting face of the driver, it 
+divides the image into four quadrants then the top and 
+bottom part are detected.”Fig.4”, shows LBP extract the 
+image from the video then the image is divided into blocks, 
+after that LBP histogram are generated from the each block
+
+--------------------------------------------------------------------------------
+
+CHUNK 16 | source=.uploads/sample.pdf | page=2
+image from the video then the image is divided into blocks, 
+after that LBP histogram are generated from the each block 
+and feature histograms are fo rmed[14] Figure Shows the 
+LBP technique. 
+ 
+Fig. 4.  Local Binary pattern [14] 
+C.  Steering Wheel Movement (SWM)  
+  Measured using steering angle sensor and it is a widely 
+used vehicle-based measure for detecting the level of driver 
+drowsiness. Using an angle sensor mounted on the steering 
+column, the driver’s steering behaviour is measured. When 
+drowsy, the number of micro-corrections on the steering 
+wheel reduces compared to no rmal driving. Furlough and 
+Graham found that sleep deprived drivers made fewer 
+steering wheel reversals than normal drivers .To eliminate 
+the effect of lane changes, the researchers considered only 
+small steering wheel movements (between 0.5° and 5°),
+
+--------------------------------------------------------------------------------
+
+CHUNK 17 | source=.uploads/sample.pdf | page=2
+the effect of lane changes, the researchers considered only 
+small steering wheel movements (between 0.5° and 5°), 
+which are needed to adjust the lateral position within the 
+lane .”Fig.5” shows the SWM based detection. In general, 
+steering behavior is influenced by characteristics of the 
+driving task (e.g. speed, curvature, and lane width), driver 
+traits (e.g. driving experience), and driver states (e.g. 
+laxness, distraction or fatigue). Drivers are constantly 
+judging the situation ahead and applying small, smooth, 
+steering adjustments to correc t for small road bumps and 
+crosswinds by turning the steering wheel in small 
+increments. 
+  
+Fig.5. Steering Movement Based Detection [15] 
+Hence, based on small SWMs, it is possible to determine 
+the drowsiness state of the driv er and thus provide an alert 
+if needed. In a simulated environment, light side winds that
+
+--------------------------------------------------------------------------------
+
+CHUNK 18 | source=.uploads/sample.pdf | page=2
+the drowsiness state of the driv er and thus provide an alert 
+if needed. In a simulated environment, light side winds that 
+pushed the car to the right side of the road were added 
+along a curved road in order to create variations in the 
+lateral position and force the drivers to make corrective 
+SWMs . Car companies, such as Nissan and Renault, have 
+adopted SWMs but it works in very limited situations . This 
+is because they can function reliably only at particular 
+environments and are too dependent on the geometric 
+characteristics of the road and  to a lesser extent on the 
+kinetic characteristics of the vehicle [16] 
+ 
+D.  Optical Detection 
+ The most common implementation of an optical sensor 
+system uses infrared or near-infrared LEDs to light the 
+driver’s pupils, which are then monitored by a camera 
+system. Computer algorithms  analyse blink rate and
+
+--------------------------------------------------------------------------------
+
+CHUNK 19 | source=.uploads/sample.pdf | page=2
+driver’s pupils, which are then monitored by a camera 
+system. Computer algorithms  analyse blink rate and 
+duration to determine drowsiness.  The camera system may 
+also monitor facial features and head position for signs of 
+drowsiness, such as yawning and sudden head nods. 
+Depicts the use of an optical detection system [17] 
+ 
+E.  Eye Blinking Based Technique 
+  In this eye blinking rate and eye closure duration is 
+measured to detect driver’s  drowsiness. Because when 
+driver felt sleepy at that time his/her eye blinking and gaze 
+between eyelids are different from normal situations so they 
+easily detect drowsiness.”Fig.6”, shows the eye blinking 
+based drowsiness detection In this system the position of 
+irises and eye states are monitored through time to estimate 
+eye blinking frequency and eye close duration. [18]. And in 
+this type of system uses a remotely placed camera to
+
+--------------------------------------------------------------------------------
+
+CHUNK 20 | source=.uploads/sample.pdf | page=2
+eye blinking frequency and eye close duration. [18]. And in 
+this type of system uses a remotely placed camera to 
+acquire video and computer vision methods are then applied 
+to sequentially localize face, eyes and eyelids positions to 
+measure ratio of closure.[19] Using these eyes closer and 
+blinking ration one can detect drowsiness of driver. Such a 
+system, mounted in a discreet corner of the car, could 
+monitor for any signs of the head tilting, the eyes drooping, 
+or the mouth yawning simultaneously. The following figure 
+shows the eye blink detection. 
+ 
+Fig. 6. Scheme of the proposed algorithm for eye-blink detection [20] 
+ 
+F. Yawning Based Technique 
+  Detection of drives’ drowsiness based on yawning 
+measurement. This involves several steps including the real 
+time detection and tracking of driver’s face, detection and
+
+--------------------------------------------------------------------------------
+
+CHUNK 21 | source=.uploads/sample.pdf | page=2
+measurement. This involves several steps including the real 
+time detection and tracking of driver’s face, detection and 
+tracking of the mouth contour and the detection “Fig.7”, 
+shows of yawning based on measuring both the rate and the 
+amount of changes in the mouth contour area. APEX™ 
+automotive smart camera platform developed by Connive 
+Vandna Saini et al, / (IJCSIT) International Journal of Computer Science and Information Technologies, Vol. 5 (3) , 2014, 4245-4249
+www.ijcsit.com 4247
+
+--------------------------------------------------------------------------------
+
+CHUNK 22 | source=.uploads/sample.pdf | page=3
+Corp. In our approach, the dr iver’s face is continuously 
+captured using a video camera th at is installed under the 
+front mirror inside the car, as  shown in “Fig.8”, Next, 
+detecting drowsiness involves two main steps to properly 
+measure changes in facial gestures that imply drowsiness.  
+ 
+ 
+Fig.7. Example of Face and Mouth Contours Detection (a) 
+ 
+  First, the driver’s face is de tected and tracked in the series 
+of frame shots taken by the camera. After locating the 
+driver’s face, the next step is to detect and track the location 
+of the mouth.  We have chosen to detect and track the 
+face prior to tracking the mouth as this makes the mouth 
+tracking  procedure  more robu st against false detections. 
+After detection of the mouth, the yawning state is detected 
+based on measuring the rate of changes in the area of the 
+mouth contour and the aspect ratio of mouth area [22].
+
+--------------------------------------------------------------------------------
+
+CHUNK 23 | source=.uploads/sample.pdf | page=3
+based on measuring the rate of changes in the area of the 
+mouth contour and the aspect ratio of mouth area [22]. 
+ 
+ 
+Fig.8. APEXTM Camera Setup (b) 
+G.  Head Nodding Detection 
+Another method currently use is the Head Position 
+Detection. This technology simply determines the head tilt 
+angle. When the head angle goes beyond a certain angle, an 
+audio alarm is transmitted in the driver’s ear. 
+VI. C
+ONCLUSION 
+As described throughout the paper, many technologies exist 
+to detect driver fatigue. This paper tries to look at the 
+emerging technologies and determine the best approaches 
+in trying to prevent the numb er one cause of fatal vehicle 
+crashes. Currently, the number one selling product in the 
+market is the market is nothing more than a reed switch to 
+detect head angle tilt. This product is extremely limited and 
+not very effective. The product made by BMW and
+
+--------------------------------------------------------------------------------
+
+CHUNK 24 | source=.uploads/sample.pdf | page=3
+detect head angle tilt. This product is extremely limited and 
+not very effective. The product made by BMW and 
+integrated into their high end cars to detect driver fatigue 
+behaviour is slightly more effective is detection but lack 
+proper notification to warn a driver. The current market and 
+technologies is in its infancy mode. New technologies keep 
+emerging using different techniques.  
+R
+EFERENCES 
+[1] Ralph Oyini Mbouna, Seong G. Kong, Senior Member, 
+IEEE,(2013),Visual Analysis of Eye State and Head Pose for Driver 
+Alertnes Monitoring,     (IEEE),pp.1462-1469,vol.14,USA 
+[2] S. Vitabile, A. De Paola, F. Sorbello, J Ambient Intell Human 
+Comput, “A real-time non-intrusive FPGA-based Drowsiness  
+system” Springer, pp.251-262, University of Palermo, Italy 2011 
+[3] Road safety information, rospa, “d river fatigue and road accidents” 
+,www.rospa.com, 2011
+
+--------------------------------------------------------------------------------
+
+CHUNK 25 | source=.uploads/sample.pdf | page=3
+[3] Road safety information, rospa, “d river fatigue and road accidents” 
+,www.rospa.com, 2011 
+[4] Arun Sahayadhas,Kenneth  Sundaraj,”Detecting Driver Drowsiness 
+Based on Sensors A Review”,pp.16937-16953, ISSN 1424-8220, 
+Malaysia 2012 
+http://djhurij4nde4r.cloudfront.net/images/images/000/005/917/fullsi
+ze/eskandarian.png?1386903510 
+[5] Anirban dasgupta,anjith george ,”A Vision Based System For 
+Monitoring The Loss Of Attention in Automotive Drivers”,(IEEE 
+Transaction),vol.14,no.4 2013 
+[6] AntoinePicot,SylvieCharbonnier,”On-Line Detection of Drowsiness 
+Using Brain and Visual Informati on”,IEEE Transaction on systems, 
+man and cybernetics part a: sy stems and humans, VOL. 42, NO. 
+3,2012 
+[7] Boon-Giin Lee and Wan-Young Chung, “Driver Alertness 
+Monitoring Using Fusion of Facial Features and Bio-Signals”, 
+(IEEE) Sensors journal, vol. 12, no. 7,2012
+
+--------------------------------------------------------------------------------
+
+CHUNK 26 | source=.uploads/sample.pdf | page=3
+Monitoring Using Fusion of Facial Features and Bio-Signals”, 
+(IEEE) Sensors journal, vol. 12, no. 7,2012 
+[8] Ralph Oyini Mbouna, Seong G. K ong, Senior Member, “Visual 
+Analysis of Eye State and Head Pose for Driver 
+AlertnessMonitoring”,IEEE transactions on intelligent transportation 
+systems, VOL. 14, NO. 3 2013 
+[9] Rami N. Khushaba, Sarath K odagoda, Sara Lal, and Gamini 
+Dissanayake,”Driver Drowsiness Classi ﬁcation Using Fuzzy 
+Wavelet-Packet-Based Feature-Extraction Algorithm”, (IEEE) 
+Transactions vol. 58, no. 1, 2011. 
+[10] Raoul Lopes , D.J Sanghvi, Adit ya Shah,”Drowsiness Detection 
+based on Eye Movement, Yawn Detection and Head Rotation”,  Vol. 
+2, No.6,2012  
+[11] Wei Zhang, Bo Cheng, Yingzi Lin, ” Driver Drowsiness Recognition 
+Based on  Computer Vision Technology”,(IEEE) Vol.17, No.3, 2012. 
+[12] Karamjeet Singh,Rupinder Kaur,”Physical and Physiological
+
+--------------------------------------------------------------------------------
+
+CHUNK 27 | source=.uploads/sample.pdf | page=3
+Based on  Computer Vision Technology”,(IEEE) Vol.17, No.3, 2012. 
+[12] Karamjeet Singh,Rupinder Kaur,”Physical and Physiological 
+Drowsiness Detection Methods”, IJIEASR, pp.35-43,vol.2,2013. 
+[13] Dr. Xiong (Bill) Yu, P.E.,”Non-Contact Driver Drowsiness Detection 
+System”,(safety IDEA),2012 
+[14] Di Huang, Student Member, IEEE, Caifeng Shan, Member, 
+IEEE,”Local Binary Patterns and Its Application to Facial Image 
+Analysis A Survey”,(IEEE ),pp.765-
+781,vol.41,2011.http://www.scholarpedia.org/article/Local_Binary_P
+atterns 
+[15] http://www.tytlabs.com/images/tech/photo/tec3_detail_ph08-1.jpg 
+[16] Jarek Krajewski,David Sommer,”Steering Wheel Behavior Based 
+Estimation Of Fatigue”, Fifth In ternational Driving Symposium on 
+Human Factors in Driver Assessme nt, Training and Vehicle Design, 
+Germany. 
+[17] L. Bergasa, J. Nuevo, M. Sotelo, R. Barea, and M. Lopez ,”Real-
+
+--------------------------------------------------------------------------------
+
+CHUNK 28 | source=.uploads/sample.pdf | page=3
+Human Factors in Driver Assessme nt, Training and Vehicle Design, 
+Germany. 
+[17] L. Bergasa, J. Nuevo, M. Sotelo, R. Barea, and M. Lopez ,”Real-
+Time System for Monitoring Driver  Vigilance”, (IEEE) Transactions 
+on Intelligent Transportation Systems, Vol. 7, no. 1, March  2006 
+[18] Artem A. Lenskiy and Jong-Soo Lee, “Driver’s Eye Blinking 
+Detection Using Novel Color and Texture Segmentation 
+Algorithms”,  International Journal of Control, Automation, and 
+Systems,pp.317-327, 2012  
+[19] Amol M. Malla, Paul R. Davidson,  Philip J. Bones, Richard Green 
+and Richard D. Jones,”Automated Video-based Measurement of Eye 
+Closure for Detecting Behavioral Microsleep”, presented at 32nd 
+Annual International Conference of the IEEE EMBS Buenos Aires, 
+Argentina 2010 
+[20] http://www.medialt.no/pub/uikt/u2010/011-Krolak/index.html
+
+--------------------------------------------------------------------------------
+
+CHUNK 29 | source=.uploads/sample.pdf | page=3
+Annual International Conference of the IEEE EMBS Buenos Aires, 
+Argentina 2010 
+[20] http://www.medialt.no/pub/uikt/u2010/011-Krolak/index.html 
+[21] Shivangi R.Mishra, Prof. S. B. Somani, Pranjali Deshmukh, Daman 
+Soni, “EEG Signal Processing and Classification of  Sensorimoter 
+rhythm-based BCI”,(IJERT),International Journal of Engineering 
+Research & Technology Vol. 1 Issue 4, 2012 
+[22] Behnoosh Hariri, Shabnam Abtahi,Shervin Shirmohammadi , Luc 
+Martel,” A Yawning Measurement Method to Detect Driver 
+Drowsiness “. 
+Vandna Saini et al, / (IJCSIT) International Journal of Computer Science and Information Technologies, Vol. 5 (3) , 2014, 4245-4249
+www.ijcsit.com 4248
+
+--------------------------------------------------------------------------------
+
+CHUNK 30 | source=.uploads/sample.pdf | page=4
+[23] Dr.Suryaprasad J, Sandesh D, Sara swathi V, Swathi D, Manjunath 
+S,” Real Time Drowsy driver Detection using Haarcase samples”, pp. 
+45–54, 2013 
+[24] R.sukanesh, V.vijayprasath, “Certain  Investigations on Drowsiness 
+Alert system based on Heart Rate Variability using labview” E-ISSN: 
+2224-3402, Issue 11, Volume 10, November 2013 
+[25] Parris, J., et.al, "Face and eye det ection on hard datasets," Biometrics 
+(IJCB), International Joint Conference on , vol., no., pp.1,10, 11-13 
+Oct. 2011 
+[26] Goel, P, et.al., "Hybrid Approach of Haar Cascade Classifiers and 
+Geometrical Properties of Facial Features Applied to Illumination 
+Invariant Gender Classification System," Computing Sciences 
+(ICCS), 2012 International Conference on , vol., no., pp.132,136, 14-
+15 Sept. 2012 
+[27] W. Ali, F. Georgsson, and T. Hells tr¨om, “Visual tree detection for
+
+--------------------------------------------------------------------------------
+
+CHUNK 31 | source=.uploads/sample.pdf | page=4
+15 Sept. 2012 
+[27] W. Ali, F. Georgsson, and T. Hells tr¨om, “Visual tree detection for 
+autonomous navigation in forest environment,” in Proc. IEEE Intell. 
+Veh. Symp., Jun. 2008, pp. 560–565. 
+T. Gritti, C. Shan, V. Jeanne, a nd R. Braspenning, “Local features 
+based  facial expression recognition with face registration errors,” 
+presented at   the IEEE Int. Conf. Autom. Face Gesture Recog., 
+Amsterdam, The Netherlands, Sep. 2008 
+. 
+Vandna Saini et al, / (IJCSIT) International Journal of Computer Science and Information Technologies, Vol. 5 (3) , 2014, 4245-4249
+www.ijcsit.com 4249
+
+--------------------------------------------------------------------------------
+
